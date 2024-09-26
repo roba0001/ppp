@@ -1,0 +1,21 @@
+:root {
+  --card-border: red;
+}
+
+/* img {
+  height: 20rem;
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+} */
+
+@font-face {
+  font-family: Migha;
+  src: url(fonts/migha/Migha-Regular.otf) format("opentype");
+}
+
+h1 {
+  font-family: Migha;
+  font-size: 500%;
+  color: rgb(208, 59, 59);
+}
