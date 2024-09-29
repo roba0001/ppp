@@ -12,97 +12,86 @@
     <header></header>
     <main>
       <div class="bg_color">
-        <h1>Ronja</h1>
+        <h1 class="full">Ronja</h1>
         <h1>Baldursdóttir</h1>
       </div>
       <!-- <img class="full" src="images/placeholder.jpg" alt="billede af mig" /> -->
+      <div class="grid">
+        <img src="images/mig_cropped.webp" alt="Picture of myself" />
 
-      <section class="about_contact">
-        <div class="about">
-          <h3>About me</h3>
-          <p>
-            I am Ronja Baldursdóttir, a 22 year old currently studying Multimedia design at
-            Copenhagen School of Design and Technology. I am at the moment specializing in frontend
-            development, but also have an interest digital design.
-          </p>
-        </div>
-        <div class="contact">
-          <h3>Contact</h3>
-          <p>Get in contact with me via my email or LinkedIn profile!</p>
-
-          <div class="flex">
-            <div>
-              <!-- <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="5rem"
-                height="2rem"
-                viewBox="0 0 32 32"
-              >
-                <path
-                  fill="none"
-                  stroke="red"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M29 9v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9m26 0a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2m26 0l-11.862 8.212a2 2 0 0 1-2.276 0L3 9"
-                />
-              </svg> -->
-              <img class="icon" src="images/email.svg" alt="" />
-              <p>ronjabaldurs@gmail.com</p>
-            </div>
-
-            <a href="https://www.linkedin.com/in/ronja-baldursd%C3%B3ttir-22122423a">
-              <!-- <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="5rem"
-                height="2rem"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="red"
-                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
-                />
-              </svg> -->
-              <img class="icon" src="images/linkedin.svg" alt="" />
-            </a>
+        <section class="about_contact">
+          <div class="about">
+            <h3>About me</h3>
+            <p>
+              I am Ronja Baldursdóttir, a 22 year old currently studying Multimedia design at
+              Copenhagen School of Design and Technology. At the moment I specialize in fontEnd
+              development, but I also have a big interest in Digital Design.
+            </p>
           </div>
-        </div>
-      </section>
+          <div class="contact">
+            <h3>Contact</h3>
+            <p>Get in contact with me via my email or LinkedIn profile!</p>
 
-      <h3>Projekter</h3>
+            <div class="flex">
+              <div>
+                <img class="icon" src="images/email.svg" alt="" />
+                <p>ronjabaldurs@gmail.com</p>
+              </div>
+
+              <a href="https://www.linkedin.com/in/ronja-baldursd%C3%B3ttir-22122423a">
+                <img class="icon" src="images/linkedin.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="projects_txt">
+        <h3>Projects</h3>
+        <p>
+          The past year I have been a part of making 10 websites, using my knowledge within digital
+          design to generate ideas, always working iteratively in Figma, Illustrator and other
+          design programs, thereafter implementing these ideas using HTML, CSS and JavaScript. Here
+          are some of my projects!
+        </p>
+      </div>
       <section class="full">
         <ul role="list">
           <li>
-            <h3>Project 1</h3>
-            <p>
-              The Balance Sheet is a summary of the assets and liabilities and equity of a business
-              at a specific point of time.
-            </p>
+            <h3>ALPHA Management</h3>
+            <p>Establishing an online presence in form of a website for ALPHA Management</p>
+            <video src="images/alpha_optag.mov" autoplay loop></video>
           </li>
 
           <li>
-            <h3>Project 2</h3>
+            <h3>Soup Shenanigans</h3>
             <p>
-              The Income (Profit and Loss) Statement, commonly referred to as the P&L statement,
-              summarizes the revenue and expenses for a specific time period (one month, one
-              quarter, one year, etc.)
+              Design of game elements in Illustrator, and later implementing this into a simple game
+              with HTML, CSS animations and JavaScript.
             </p>
+            <img src="images/animation.webp" alt="Startscreen of the game" />
           </li>
 
           <li>
-            <h3>Project 3</h3>
+            <h3>Dynamic site</h3>
             <p>
-              Keep your information current and review the documents on a regular basis (monthly or
-              more often if needed). Review them with key individuals within your company.
+              Creating a dynamic site using data fetching. Processing the data using Supabase,
+              JavaScript and json.
             </p>
+            <div class="dynamic_grid">
+              <img src="images/dynamisk1.png" alt="Dynamic site" />
+              <img src="images/dynamisk2.png" alt="Dynamic site" />
+            </div>
           </li>
 
           <li>
-            <h3>Project 4</h3>
+            <h3>Redesign of existing website</h3>
             <p>
-              Ratios are useful when comparing your company with the competition on financial
-              performance and also when benchmarking the performance of your company.
+              Redesigning an existing website based off the customers and company's needs for a
+              better user experience.
             </p>
+            <video class="itmv" src="images/ITMV_before.mov" autoplay loop></video>
+            <video class="itmv" src="images/ITMV.mov" autoplay loop></video>
           </li>
         </ul>
       </section>

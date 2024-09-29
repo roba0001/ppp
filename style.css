@@ -10,12 +10,13 @@
 } */
 
 @font-face {
-  font-family: Migha;
-  src: url(fonts/migha/Migha-Regular.otf) format("opentype");
+  font-family: Bernoru;
+  src: url(fonts/bernoru/bernoru-blackultraexpanded.otf) format("opentype");
 }
 
 h1 {
-  font-family: Migha;
-  font-size: 500%;
-  color: rgb(208, 59, 59);
+  font-family: Bernoru;
+  font-size: 300%;
+  color: var(--card-border);
+  text-transform: uppercase;
 }

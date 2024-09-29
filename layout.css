@@ -24,10 +24,16 @@ main {
     }
   }
 
-  .about_contact {
+  .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 3rem;
+    margin: 4rem 0;
+  }
+  .about_contact {
+    display: grid;
+    grid-template-columns: subgrid;
+    gap: 3rem;
     > * {
       grid-column: 2;
     }
@@ -66,13 +72,17 @@ main {
     }
   }
 
+  .projects_txt {
+    margin-bottom: 4rem;
+  }
   ul {
+    display: flex;
     scroll-snap-type: x mandatory;
     grid-column: full;
     padding-inline: max(1rem, 50% - 1000px / 2);
     padding-block-end: 1rem;
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
     overflow-x: auto;
 
     scrollbar-width: none;
@@ -83,7 +93,7 @@ main {
 
     & li {
       scroll-snap-align: center;
-      flex-basis: min(400px, 90%);
+      flex-basis: min(700px, 90%);
       flex-shrink: 0;
 
       border-color: var(--card-border);
@@ -91,6 +101,18 @@ main {
       border-radius: 2rem;
       padding: 2.75rem 2.1875rem;
       align-self: start;
+    }
+
+    .dynamic_grid {
+      height: 500px;
+      aspect-ratio: 1/1;
+      display: flex;
+    }
+    .itmv {
+      height: 500px;
+      aspect-ratio: 1/1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
