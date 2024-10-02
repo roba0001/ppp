@@ -10,13 +10,14 @@
 } */
 
 @font-face {
-  font-family: Bernoru;
-  src: url(fonts/bernoru/bernoru-blackultraexpanded.otf) format("opentype");
+  font-family: Tex;
+  src: url(fonts/tex-gyre-adventor/texgyreadventor-bold.otf) format("opentype");
 }
 
 h1 {
-  font-family: Bernoru;
-  font-size: 300%;
+  font-family: Tex;
+  font-size: 600%;
   color: var(--card-border);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  padding: 1rem 0;
 }
