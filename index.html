@@ -4,9 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PPP</title>
+    <link rel="icon" type="image/x-icon" href="images/my_logo.svg" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="reset.css" />
+    <!-- h1 font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- p font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header></header>
@@ -26,6 +41,8 @@
               Hi! I'm Ronja Baldursdóttir, currently studying Multimediadesign at the Copenhagen
               School of Design and Technology.
             </p>
+            <br />
+            <a href="#projects">View my projects!</a>
           </div>
           <div>
             <h3>What can I offer?</h3>
@@ -63,58 +80,125 @@
         </div>
       </section>
       <div class="line"></div>
-      <div class="projects_txt">
+      <div class="projects_txt" id="projects">
         <h3>Projects</h3>
         <p>
           The past year I have been a part of making 10 websites, using my knowledge within digital
           design to generate ideas, working mostly in Figma or Illustrator. Thereafter implementing
           these ideas using HTML, CSS and JavaScript. Here are some of my projects!
         </p>
+        <br />
+        <button class="tldr_button">TL;DR</button>
       </div>
       <section class="full">
         <ul role="list">
           <li>
-            <h3>ALPHA Management</h3>
-            <p>Establishing an online presence in form of a website for ALPHA Management</p>
+            <h3>My Own Logo</h3>
+            <p class="tldr">TL;DR - really...</p>
+            <p>Here I made my own logo based off my initials <3</p>
+            <button class="spin_btn">Spin me!</button>
+            <img class="my_logo" src="images/my_logo.svg" alt="My logo" />
+          </li>
+          <li>
+            <div class="project_flex">
+              <h3>ALPHA Management</h3>
+              <a href="https://alpha-management.netlify.app/">Visit site!</a>
+            </div>
+            <p class="tldr">
+              TL;DR - Establishing an online presence in form of a website and SoMe content for
+              ALPHA Management
+            </p>
+            <p>
+              As my exam project for my second semester, I got the honor to establish an online
+              presence for ALPHA management & artist services in form of a website and SoMe
+              material. The website was built on a database with info about their signed artists,
+              events, news and recommendations.
+            </p>
+            <p>
+              As their only form of existing visual identity at the time was their logo, which gave
+              us quite free reins in terms of creating their online image. Of course we worked close
+              with ALPHA during the entire process to iteratively change and better the end product.
+            </p>
             <video src="images/alpha_optag.mov" autoplay loop></video>
           </li>
 
           <li>
             <h3>Soup Shenanigans</h3>
-            <p>
-              Design of game elements in Illustrator, and later implementing this into a simple game
-              with HTML, CSS animations and JavaScript.
+            <p class="tldr">
+              TL;DR - Designing game elements in Illustrator, later implementing these into a game
+              using HTML, CSS animations and JavaScript.
             </p>
-            <img src="images/animation.webp" alt="Startscreen of the game" />
-          </li>
-
-          <li>
-            <h3>Dynamic site</h3>
             <p>
-              Creating a dynamic site using data fetching. Processing the data using Supabase,
-              JavaScript and json.
+              Soup Shenanigans is a creative and simple game that runs using JavaScript and
+              CSS-animations. The goal of the game is to swat the incoming flies away from your
+              soup, while collecting as much garnish as you can to make a delicious dinner. The game
+              elements are designed in Illustrator taking inspiration from flat design.
             </p>
-            <div class="dynamic_grid">
-              <img src="images/dynamisk1.png" alt="Dynamic site" />
-              <img src="images/dynamisk2.png" alt="Dynamic site" />
+            <p>
+              <span>UH OH!!</span> Sadly my computer decided to kill itself last winter
+              (understandable…) so there is no way to actually play the game, but i have attached
+              pictures of the design below.
+            </p>
+            <div class="animation_grid">
+              <img
+                data-filter="img1"
+                src="images/animation/startscreen.svg"
+                alt="Startscreen of the game"
+              />
+              <img
+                data-filter="img2"
+                src="images/animation/taberscreen.svg"
+                alt="Loserscreen of the game"
+              />
+              <!-- <img src="images/animation/winnerscreen.svg" alt="Winnderscreen of the game" /> -->
             </div>
           </li>
 
           <li>
-            <h3>Redesign of existing website</h3>
+            <h3>Bastard Café Gin Menu</h3>
+            <p class="tldr">TL;DR - Visually designing and collecting information for a gin menu</p>
             <p>
-              Redesigning an existing website based off the customers and company's needs for a
-              better user experience.
+              In 2022 i got the honor to create and design a gin menu for Bastard Café’s ginbar. I
+              had great fun with it, but have found it to be hard to keep up to date as it is
+              printed out. Therefore we are currently working on getting it up and running as an
+              online dynamic gin menu, using a database to update it more frequently.
             </p>
-            <div class="itmv">
-              <video class="itmv" src="images/ITMV_before.mov" autoplay loop></video>
-              <video class="itmv" src="images/ITMV.mov" autoplay loop></video>
+            <div class="menu_grid">
+              <img src="images/ginmenu/menu2.webp" alt="Ginmenu 1st page" />
+              <img src="images/ginmenu/menu1.webp" alt="Ginmenu 2nd page" />
             </div>
+          </li>
+
+          <li>
+            <div class="project_flex">
+              <h3>Veranda</h3>
+              <a href="https://roba0001.github.io/verandavin_ppp/">Visit site!</a>
+            </div>
+            <p class="tldr">TL;DR - Redesigning an existing website for Veranda wine bar</p>
+            <p>
+              The wine bar Veranda was in dire need of a redesign of their website, and me and my
+              group arrived just in time! We worked alongside the owner and the company’s graphic
+              designer to curate the perfect website that balances between conveying important
+              information to customers while staying true to Verandas existing visual identity.
+            </p>
           </li>
         </ul>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="lines">
+        <div class="flex">
+          <div>
+            <img class="icon" src="images/email.svg" alt="" />
+            <p>ronjabaldurs@gmail.com</p>
+          </div>
+
+          <a href="https://www.linkedin.com/in/ronja-baldursd%C3%B3ttir-22122423a">
+            <img class="icon" src="images/linkedin.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

@@ -58,11 +58,27 @@ main {
       width: 30rem;
       border-color: var(--card-border);
       border-width: 2px;
-      padding: 2rem;
       border-radius: 2rem;
+      padding: 2.75rem 1rem;
       /* transform: translateY(-5rem); */
       > * {
         padding: 1rem;
+
+        > * {
+          padding: 5px 0;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        background-color: var(--button_bg);
+        border-color: var(--card-border);
+        border-width: 2px;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        &:hover {
+          background-color: rgba(255, 0, 0, 0.317);
+        }
       }
     }
 
@@ -80,17 +96,6 @@ main {
     .icon {
       width: 2rem;
       height: auto;
-    }
-    .flex {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 2rem;
-      > * {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 1rem;
-      }
     }
   }
 
@@ -123,6 +128,39 @@ main {
       border-radius: 2rem;
       padding: 2.75rem 2.1875rem;
       align-self: start;
+
+      display: flex;
+      flex-direction: column;
+
+      > * {
+        margin-bottom: 1.5rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      button,
+      a {
+        text-decoration: none;
+        color: black;
+        background-color: var(--button_bg);
+        border-color: var(--card-border);
+        border-width: 2px;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        width: auto;
+        align-self: flex-end;
+
+        &:hover {
+          background-color: rgba(255, 0, 0, 0.317);
+        }
+      }
+
+      .my_logo {
+        width: 50%;
+        align-self: center;
+      }
     }
 
     .dynamic_grid {
@@ -136,4 +174,63 @@ main {
       display: flex;
     }
   }
+
+  .tldr {
+    color: red;
+    font-weight: bold;
+  }
+  .tldr_button {
+    font-weight: bold;
+    background-color: var(--button_bg);
+    border-color: var(--card-border);
+    border-width: 2px;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+
+    &:hover {
+      background-color: rgba(255, 0, 0, 0.317);
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+  }
+}
+
+.menu_grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.animation_grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  width: 2rem;
+  height: auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  > * {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+footer {
+  margin: 1rem 2rem;
+}
+
+.project_flex {
+  display: flex;
+  justify-content: space-between;
 }

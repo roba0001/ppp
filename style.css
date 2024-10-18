@@ -1,23 +1,89 @@
 :root {
   --card-border: red;
+  --button_bg: rgb(252, 90, 90);
 }
 
-/* img {
-  height: 20rem;
-  width: 100%;
-  background-size: cover;
-  object-fit: cover;
-} */
-
 @font-face {
-  font-family: Tex;
-  src: url(fonts/tex-gyre-adventor/texgyreadventor-bold.otf) format("opentype");
+  font-family: WorkSans;
+  src: url(fonts/Work_Sans/WorkSans-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: WorkSans;
+  src: url(fonts/Work_Sans/WorkSans-VariableFont_wght.ttf) format("truetype");
 }
 
 h1 {
-  font-family: Tex;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
   font-size: 600%;
+  font-style: normal;
+  text-transform: uppercase;
   color: var(--card-border);
   /* text-transform: uppercase; */
-  padding: 1rem 0;
+}
+
+p,
+h3,
+a,
+button {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 175%;
+}
+
+.hide {
+  display: none;
+}
+
+span {
+  color: red;
+  font-weight: bold;
+}
+
+/* animationer */
+.rotate {
+  transition-duration: 3s;
+  animation-iteration-count: infinite;
+  transition-property: transform;
+  animation-timing-function: linear;
+  transform: rotate(360deg);
+}
+
+@keyframes rotate_kf {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate4ever {
+  animation-name: rotate4ever_kf;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate4ever_kf {
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.dead {
+  animation-name: dead_kf;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes dead_kf {
+  25% {
+    scale: 2;
+  }
+  100% {
+    rotate: 360deg;
+    /* ændrer størrelse */
+    scale: 0;
+  }
 }
