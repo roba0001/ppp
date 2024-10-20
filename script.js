@@ -3,6 +3,7 @@ window.addEventListener("load", siteInit);
 const allTLDR = document.querySelectorAll(".tldr");
 
 function siteInit() {
+  console.log("side init");
   // too long didnt read
   document.querySelector(".tldr_button").addEventListener("click", displayTLDR);
   allTLDR.forEach((tldr) => {
@@ -16,11 +17,20 @@ function siteInit() {
 
 // too long didnt read
 function displayTLDR() {
-  console.log("hu,l igennem");
+  console.log("tldr displayed");
+  document.querySelector(".tldr_button").removeEventListener("click", displayTLDR);
   allTLDR.forEach((tldr) => {
     tldr.classList.remove("hide");
   });
-  document.querySelector(".tldr_button").addEventListener("click", siteInit);
+  document.querySelector(".tldr_button").addEventListener("click", hideTLDR);
+}
+
+function hideTLDR() {
+  console.log("tldr hidden");
+  allTLDR.forEach((tldr) => {
+    tldr.classList.add("hide");
+  });
+  document.querySelector(".tldr_button").addEventListener("click", displayTLDR);
 }
 
 // rotate animation
@@ -31,7 +41,6 @@ function beginSpinAnimation() {
 }
 
 function resetAnimation() {
-  console.log("animation over");
   document.querySelector(".my_logo").classList.remove("dead");
   document.querySelector(".spin_btn").addEventListener("click", beginSpinAnimation);
 }
