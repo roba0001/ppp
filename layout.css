@@ -236,13 +236,18 @@ footer {
 .project_flex {
   display: flex;
   justify-content: space-between;
+
+  & a {
+    text-align: center;
+    padding: 0.5rem;
+  }
 }
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 800px) {
   main {
     display: grid;
-    grid-template-columns: [full-start] 1fr [content]max(400px) 1fr [full-end];
+    grid-template-columns: [full-start] 1fr [content]max(300px) 1fr [full-end];
     padding: 2rem 0;
 
     .grid {
@@ -264,6 +269,10 @@ footer {
       li {
         max-width: 80%;
       }
+    }
+
+    .project_flex {
+      flex-direction: column;
     }
   }
 }
