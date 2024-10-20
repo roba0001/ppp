@@ -50,7 +50,8 @@ main {
 
     img {
       grid-row: 1;
-      width: 80%;
+      width: 100%;
+      place-self: center;
     }
     .about {
       grid-column: 2;
@@ -233,4 +234,34 @@ footer {
 .project_flex {
   display: flex;
   justify-content: space-between;
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: [full-start] 1fr [content]max(400px) 1fr [full-end];
+    padding: 2rem 0;
+
+    .grid {
+      display: grid;
+      grid-template-columns: subgrid;
+
+      img {
+        max-width: 70%;
+      }
+
+      .about,
+      .contact {
+        grid-row: auto;
+        max-width: 100%;
+      }
+    }
+    ul {
+      gap: 2rem;
+      li {
+        max-width: 80%;
+      }
+    }
+  }
 }
